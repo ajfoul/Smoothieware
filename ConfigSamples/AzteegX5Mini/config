@@ -194,6 +194,10 @@ panel.buzz_pin                              1.31              # pin for buzzer  
 panel.button_pause_pin                      2.11^             # kill/pause          ; GLCD EXP2 Pin 8 either (brown)
 #panel.back_button_pin                       2.11!^            # back button         ; GLCD EXP2 Pin 8 or
 
+panel.external_sd                            true              # set to true if there is an extrernal sdcard on the panel
+panel.external_sd.spi_channel            1                  # set spi channel the sdcard is on
+panel.external_sd.spi_cs_pin              0.17               # set spi chip select for the sdcard (or any spare pin) GLCD EXP2 Pin 4 (drkBrown)
+panel.external_sd.sdcd_pin                1.23!^          # sd detect signal (set to nc if no sdcard detect) (or any spare pin) GLCD EXP2 Pin 7 (drkPurple)
 
 # Example viki2 config for an azteeg miniV2 with IDC cable
 #panel.lcd                                    viki2             # set type of panel
